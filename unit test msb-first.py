@@ -129,7 +129,7 @@ class TestTrivium(unittest.TestCase):
         self.assertTrue(all(bit in (0, 1) for bit in stream))
 
     def test_keystream_output(self):
-        """Перевірка правильності виводу перших 128 біт"""
+        """Перевірка правильності виводу перших 128 бітів"""
         key_hex = "F046AD10DA75802AE55F"
         iv_hex = "14F16FBA23D4499F06E3"
         trivium = Trivium(key_hex, iv_hex)
